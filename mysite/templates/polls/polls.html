@@ -1,0 +1,24 @@
+{% load static %}
+{% block extra_headers %}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<meta charset="utf-8">
+<link type="text/css" rel='stylesheet' href="{% static 'polls/css/polls.css' %}" />
+<script src="{% static 'polls/js/polls.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<fieldset id='filters' style="display:flex">
+  <legend>
+    Filters
+  </legend>
+</fieldset>
+
+<fieldset id='results'>
+  <legend>
+    Results
+  </legend>
+</fieldset>
+
+
+
+{% endblock %}
